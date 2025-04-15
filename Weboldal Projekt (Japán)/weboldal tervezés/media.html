@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Takács Ádám Bence">
+    <meta name="description" content="HTML5-CSS3 Weboldal projekt">
+    <meta name="keywords" content="HTML5, CSS3">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/japanlogo.png">
+    <title>Japán nevezetességei</title>
+
+    <style>
+        .media {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 50px;
+        }
+
+        iframe {
+            width: 600px;
+            height: 400px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="images/torii.jpg" alt="logo" width="350"></a>
+        </div>
+        <div id="banner-content">
+            <a href="index.html">
+                <h1 title="A főcím szövege">Japán nevezetességek</h1>
+            </a>
+        </div>
+    </header>
+    <div id="container">
+        <nav>
+            <h2>Főoldal</h2>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Bevezető</a></li>
+                    <li><a href="#nogo">Egyebek</a>
+                        <ul>
+                            <li><a href="animation.html">Animáció</a></li>
+                            <li><a href="form.html">Űrlap</a></li>
+                            <li><a href="table.html">Táblázat</a></li>
+                            <li><a href="gallery.html">Galéria</a></li>
+                            <li><a href="media.html">Média</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div id="container">
+        <section>
+            <h2>Videók:</h2>
+            <article> 
+                <div class="media">
+                    <iframe src="https://www.youtube.com/watch?v=IuTDuvYr7f0" frameborder="0"></iframe>
+                </div>
+            </article>
+            <article> 
+                <div class="media">
+                    <iframe src="https://www.youtube.com/watch?v=mLskQ4CJdyM&t=574s" frameborder="0"></iframe>
+                </div>
+            </article>
+        </section>
+    </div> 
+    <footer id="Copyright">
+        <p>Copyright&#169; 2025 </p>
+    </footer>
+</body>
+
+</html>

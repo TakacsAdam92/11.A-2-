@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Takács Ádám Bence">
+    <meta name="description" content="HTML5-CSS3 Weboldal projekt">
+    <meta name="keywords" content="HTML5, CSS3">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="icon" href="images/japanlogo.png">
+    <title>Japán nevezetességei</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="images/torii.jpg" alt="logo" width="350"></a>
+        </div>
+        <div id="banner-content">
+            <a href="index.html">
+                <h1 title="A főcím szövege">Japán nevezetességek</h1>
+            </a>
+        </div>
+    </header>
+    <div id="container">
+        <nav>
+            <h2>Főoldal</h2>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Bevezető</a></li>
+                    <li><a href="#nogo">Egyebek</a>
+                        <ul>
+                            <li><a href="animation.html">Animáció</a></li>
+                            <li><a href="form.html">Űrlap</a></li>
+                            <li><a href="table.html">Táblázat</a></li>
+                            <li><a href="gallery.html">Galéria</a></li>
+                            <li><a href="media.html">Média</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section>
+            <h2></h2>
+            <article id="form_article">
+                <h2>Foglalás</h2>
+                <form action="" name="foglalás">
+                    <fieldset>
+                        <legend>Foglaló adatai</legend>
+                        <p>
+                            <label for="">Név: <input type="text" name="nev"></label>
+                            <small>(Vezetéknév keresztnév)</small>
+                        </p>
+                        <p>
+                            <label for="">Tel.: <input type="tel" name="telefon" size="17"></label>
+                        </p>
+                        <p>
+                            <label for="">E-mail: <input type="email" name="email"></label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Szoba mérete</legend>
+                        <p><label for=""><input type="radio" , name="meret" value="kicsi" , checked>Kicsi</label></p>
+                        <p><label for=""><input type="radio" , name="meret" value="közepes">Közepes</label></p>
+                        <p><label for=""><input type="radio" , name="meret" value="nagy">Nagy</label></p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Egyéb tevékenységek</legend>
+                        <p><label for=""><input type="checkbox" name="feltet1" value="étkezés" checked>Napi 3 étkezés </label></p>
+                        <p><label for=""><input type="checkbox" name="feltet2" value="masszázs">Masszázs </label></p>
+                        <p><label for=""><input type="checkbox" name="feltet3" value="élményfürdő">Élményfürdő </label></p>
+                        <p><label for=""><input type="checkbox" name="feltet3" value="városnézés">Városnézés </label></p>
+
+                    </fieldset>
+                    <p><label for="">Személyek száma: <input type="number" name="szemelyek"></label></p>
+                    <p><label for="">Foglalás időpontja: <input type="date" name="idopont"></label></p>
+                    <p><label for="">Egyéb kívánságok: <input type="text" name="egyeb"></label></p>
+                    <br>
+                    <p><em>Az űrlap beküldése után E-mail-ben értesítjük ajánlatainkról!</em></p>
+                    <input type="reset" name="visszaallitas">
+                    <input type="submit" name="kuldes">
+                </form>
+            </article>
+        </section>
+    </div>
+    <footer id="Copyright">
+        <p>Copyright&#169; 2025 </p>
+    </footer>
+</body>
+
+</html>

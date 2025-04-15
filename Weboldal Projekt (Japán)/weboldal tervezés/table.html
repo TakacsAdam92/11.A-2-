@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Takács Ádám Bence">
+    <meta name="description" content="HTML5-CSS3 Weboldal projekt">
+    <meta name="keywords" content="HTML5, CSS3">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/japanlogo.png">
+    <title>Japán nevezetességei</title>
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            padding: 5px 10px;
+        }
+
+        th {
+            color: white;
+            background-color: #D84040;
+        }
+
+        .table-container {
+            width: 650px;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+        }
+        table tr:nth-child(2)
+        {
+            background-color: #ccc;
+        }
+
+        table tr:nth-child(4)
+        {
+            background-color: #ccc;
+        }
+
+        table tr:hover 
+        {
+            background-color: #D84040;
+            color: white;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="images/torii.jpg" alt="logo" width="350"></a>
+        </div>
+        <div id="banner-content">
+            <a href="index.html">
+                <h1 title="A főcím szövege">Japán nevezetességek</h1>
+            </a>
+        </div>
+    </header>
+    <div id="container">
+        <nav>
+            <h2>Főoldal</h2>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Bevezető</a></li>
+                    <li><a href="#nogo">Egyebek</a>
+                        <ul>
+                            <li><a href="animation.html">Animáció</a></li>
+                            <li><a href="form.html">Űrlap</a></li>
+                            <li><a href="table.html">Táblázat</a></li>
+                            <li><a href="gallery.html">Galéria</a></li>
+                            <li><a href="media.html">Média</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section>
+            <h2>Táblázat</h2>
+            <article>
+                <div class="table-container">
+                    <h2>Városok és látványosságok</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>város</th>
+                                <th>sziget</th>
+                                <th>prefektúra</th>
+                                <th>népesség</th>
+                                <th>nevezetesség</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Tokyo</td>
+                                <td>Honshu</td>
+                                <td>Tokyo</td>
+                                <td>14 millió</td>
+                                <td>Senso-ji Templom</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Kyoto</td>
+                                <td>Honshu</td>
+                                <td>Kyoto</td>
+                                <td>1,4 millió</td>
+                                <td>Kiyomizu-dera</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Okinawa</td>
+                                <td>Kyushu</td>
+                                <td>Okinawa</td>
+                                <td>1,2 millió</td>
+                                <td>Sefa-utaki</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Sapporo</td>
+                                <td>Hokkaido</td>
+                                <td>Hokkaido</td>
+                                <td>2 millió</td>
+                                <td>Daisetsuzan Nemzeti Park</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Osaka</td>
+                                <td>Honshu</td>
+                                <td>Osaka</td>
+                                <td>2,7 millió</td>
+                                <td>Osaka Castle</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+        </section>
+    </div>
+    
+    <footer id="Copyright">
+        <p>Copyright&#169; 2025 </p>
+    </footer>
+</body>
+
+</html>
